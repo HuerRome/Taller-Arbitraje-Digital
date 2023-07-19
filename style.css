@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Poppins:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+/*fira-code*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fira+Code:wght@300;400&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Poppins:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+/*Cutive Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fira+Code:wght@300;400;600&family=La+Belle+Aurore&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&family=Sora:wght@100;300;400&display=swap');
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600&family=Cutive+Mono&family=Fira+Code:wght@300;400;600&family=La+Belle+Aurore&family=Lexend+Deca:wght@100;200;300;400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&family=Sora:wght@100;300;400&display=swap');
+
+html{scroll-behavior: smooth;}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+    box-sizing: border-box;
+    font-family: "Fira Code",Poppins ,Arial, Helvetica, sans-serif;
+    font-family: Poppins ,Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Poppins ,Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+body{
+    width: 100%;
+    background-color: #080609;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;         
+}
+  
+body::-webkit-scrollbar-track {  
+    background: #1d1d1d;   
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5CDCC6;  
+  background-image: linear-gradient(to top,#5dbeff,#5CDCC6);
+  border-radius: 20px;        
+  border: 3px solid #1d1d1d;
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*-----------------boton de ir arriba-----------------*/
+#gotop ion-icon{
+    color: #52DEE5;
+}
+
+#gotop{
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    top: auto;
+    bottom: 6vh;
+    left: auto;
+    right: 6px;
+    margin: auto;
+    position: fixed;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    border-radius: 50%;
+    border: 1px solid #52DEE5;
+}
+
+#gotop:hover{
+    box-shadow: 0px 0px 4px 1px #52dee5;
+}
+
+.menu{
+    width: 100%;
+    height: 12vh;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0 4vw 0 2vw;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
+
+}
+
+.menu.up{
+    background-color: rgba(17, 21, 43, 0.3);
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(7px);
+}
+
+.menu > div{
+    gap: 2vw;
+    display: flex;
+}
+
+.menu_cel{
+    display: none;
+}
+
+.menu ion-icon{
+    display: none;
+}
+
+.menu img{
+    width: 11.8vh;
+}
+
+.menu > div a:first-child, .menu > div a:hover{
+    color: #5CDCC6;
+    font-weight: 600;
+}
+
+/*-----------------------Header---------------------------*/
+header{
+    display: flex;
+    padding-top: 27vh;
+    padding-bottom: 15vh;
+    background-image: url('img/fondo 1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("../img/fondo 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header > div:first-child{
+    width: 50vw;
+    padding: 0 4vw;
+}
+
+header > div:last-child{
+    width: 50vw;
+}
+
+header > iframe{
+    margin: 0 4vw;
+}
+
+header div h1{
+    margin-top: 5vh;
+    font-size: 30px;
+}
+
+header div h2{
+    font-size: 18px;
+    margin-bottom: 6vh;
+    margin-right: 2vw;
+    margin-top: 1vh;
+    font-weight: lighter;
+}
+
+header div a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1.5vh 7vw;
+    border-radius: 5px;
+    background: #5cdcc6;
+    box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+header div a:hover{
+    color: #5cdcc6;
+    background: none;
+    box-shadow: 0 4px 16px rgb(92, 220, 198, 0.5);
+    background: none;
+    border: 2px solid #5cdcc6
+}
+
+@media (max-width: 900px){
+    .container{
+        position: relative;
+    }
+    .menu{
+        padding: 0 4vw 0 4vw;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .menu > div{
+        display: none;
+    }
+
+    .menu_cel{
+        gap: 2vh;
+        width: 50vw;
+        height: 60vh;
+        z-index: 900;
+        display: flex;
+        padding: 20px;
+        margin-left: -50vw;
+        position: fixed;
+        margin-top: 12vh;
+        background: #2b2a2a;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0 0 10px 0;
+    }
+
+    .menu_cel.active{
+        margin-left: 0;
+    }
+    
+    .menu ion-icon{
+        font-size: 35px;
+        display: flex;
+    }
+    
+    /*------------------------Header--------------------------*/
+    header{
+        display: flex;
+        padding-top: 20vh;
+        padding-bottom: 0vh;
+        flex-direction: column;
+    }
+
+    header > div:first-child{
+        display: flex;
+        width: 100%;
+        padding: 0 5vw;
+        flex-direction: column;
+    }
+    
+    header > div:last-child{
+        width: 100%;
+    }
+    header > iframe{
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 0;
+    }
+    header div h1{
+        margin-top: 0vh;
+        font-size: 25px;
+    }
+    
+    header div h2{
+        font-size: 18px;
+        margin: 1vh 0 5vh 0;
+        font-weight: lighter;
+    }
+    
+    header div a{
+        padding: 10px 90px;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 600px){
+    header > iframe{
+        margin: 6vh 4vw;
+    }
+
+    .preguntas iframe{
+        margin: 6vh 0;
+    }
+    
+}
+
+
+
+
+
+
+
