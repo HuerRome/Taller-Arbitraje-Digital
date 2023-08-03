@@ -11,7 +11,6 @@ html{scroll-behavior: smooth;}
 *{
     margin: 0;
     padding: 0;
-    color: #fafafa;
     box-sizing: border-box;
     font-family: "Fira Code",Poppins ,Arial, Helvetica, sans-serif;
     font-family: Poppins ,Arial, Helvetica, sans-serif;
@@ -89,7 +88,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     padding: 0 4vw 0 2vw;
     justify-content: space-between;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
 
@@ -151,6 +149,7 @@ header > iframe{
 header div h1{
     margin-top: 5vh;
     font-size: 30px;
+    color: #fafafa;
 }
 
 header div h2{
@@ -158,6 +157,7 @@ header div h2{
     margin-bottom: 6vh;
     margin-right: 2vw;
     margin-top: 1vh;
+    color: #fafafa;
     font-weight: lighter;
 }
 
@@ -201,6 +201,7 @@ header div a:hover{
         z-index: 900;
         display: flex;
         padding: 20px;
+        color: #fafafa;
         margin-left: -50vw;
         position: fixed;
         margin-top: 12vh;
@@ -215,8 +216,9 @@ header div a:hover{
     }
     
     .menu ion-icon{
-        font-size: 35px;
         display: flex;
+        font-size: 35px;
+        color: #fafafa;
     }
     
     /*------------------------Header--------------------------*/
@@ -271,7 +273,6 @@ header div a:hover{
     }
     
 }
-
 
 
 
