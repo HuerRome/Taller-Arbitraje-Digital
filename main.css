@@ -15,6 +15,7 @@ main > h1{
     background: #5CDCC6;
     background: none;
     background: #fafafa;
+    background: #fff;
     border-radius: 10px;
     margin: 2vh 2%;
     box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
@@ -33,7 +34,7 @@ main .main_1{
 }
 
 main .style_1{
-    background-image: url('img/fondo 2.jpg');
+    background-image: url('img/fondo\ 2.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("img/fondo 2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +43,6 @@ main .style_1{
 
 main .style_2{
     background-color: #080609;
-
     background-image: url('img/fondo\ 4.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/fondo\ 4.jpg");
     background-repeat: no-repeat;
@@ -51,6 +51,7 @@ main .style_2{
 }
 
 main .main_1:nth-child(3) ul{
+    color: #fafafa;
     margin-right: 0vw;
     margin-left: 10vw;
 }
@@ -70,6 +71,7 @@ main .main_1 img{
 
 main .main_1 ul{
     padding: 30px;
+    color: #fafafa;
     margin-right: 10vw;
     border-radius: 10px;
     list-style-type: none;
@@ -78,13 +80,14 @@ main .main_1 ul{
 
 main .main_1 ul h2{
     font-size: 35px;
+    color: #fafafa;
     margin-bottom: 2vh;
 }
 
 main .main_1 ul li{
     font-size: 18px;
     font-weight: 400;
-    
+    color: #fafafa;
 }
 
 @media (max-width: 900px){
@@ -205,6 +208,10 @@ main .main_1 ul li{
     background-position: center center;
 }
 
+.galeria h1, .galeria h2{
+    color: #fafafa;
+}
+
 .galeria > div{
     gap: 4vh;
     margin: 6vh 0;
@@ -220,7 +227,6 @@ main .main_1 ul li{
 }
 
 /*--------------------------Introduccion-------------------------*/
-
 .introduccion{
     gap: 4vw;
     display: flex;
@@ -236,8 +242,13 @@ main .main_1 ul li{
     width: 25vw;
 }
 
+.introduccion h1{
+    color: #fafafa;
+}
+
 .introduccion p{
     font-size: 16px;
+    color: #fafafa;
 }
 
 /*----------------------------Bonos------------------------------*/
@@ -269,6 +280,7 @@ main .main_1 ul li{
 }
 
 .bonos div p, .bonos div span{
+    color: #fafafa;
     text-align: center;
 }
 
@@ -276,6 +288,7 @@ main .main_1 ul li{
 .garantia{
     width: 100%;
     padding: 8vh 6vw;
+    color: #fafafa;
     background: #2f2e2e;
 }
 
@@ -326,6 +339,7 @@ main .main_1 ul li{
 }
 
 .preguntas div h3, .preguntas div p{
+    color: #fafafa;
     text-align: center;
 }
 
